@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "result": null,
+  "error": {
+    "code": "MODEL_OUTPUT_INVALID",
+    "message": "モデルの出力を正しいJSONとして解釈できませんでした。"
+  }
+}

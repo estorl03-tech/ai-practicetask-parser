@@ -1,0 +1,119 @@
+[
+  {
+    "input": "明日までに請求書を送る",
+    "expected": {
+      "title": "請求書を送る",
+      "dueDate": "2026-04-04",
+      "tags": ["請求書", "送付"],
+      "category": "work"
+    }
+  },
+  {
+    "input": "牛乳と卵を買う",
+    "expected": {
+      "title": "牛乳と卵を買う",
+      "dueDate": null,
+      "tags": ["買い物", "食料"],
+      "category": "shopping"
+    }
+  },
+  {
+    "input": "来週火曜14時に歯医者",
+    "expected": {
+      "title": "歯医者に行く",
+      "dueDate": "2026-04-07",
+      "tags": ["歯医者", "通院"],
+      "category": "health"
+    }
+  },
+  {
+    "input": "金曜までに営業資料の修正",
+    "expected": {
+      "title": "営業資料を修正する",
+      "dueDate": "2026-04-03",
+      "tags": ["営業資料", "修正"],
+      "category": "work"
+    }
+  },
+  {
+    "input": "余裕あったら部屋の掃除",
+    "expected": {
+      "title": "部屋を掃除する",
+      "dueDate": null,
+      "tags": ["掃除", "部屋"],
+      "category": "personal"
+    }
+  },
+  {
+    "input": "母の日のプレゼントを探す",
+    "expected": {
+      "title": "母の日のプレゼントを探す",
+      "dueDate": null,
+      "tags": ["母の日", "プレゼント"],
+      "category": "personal"
+    }
+  },
+  {
+    "input": "明日ジム行く",
+    "expected": {
+      "title": "ジムに行く",
+      "dueDate": "2026-04-04",
+      "tags": ["ジム", "運動"],
+      "category": "health"
+    }
+  },
+  {
+    "input": "4/10までに住民税の支払い",
+    "expected": {
+      "title": "住民税を支払う",
+      "dueDate": "2026-04-10",
+      "tags": ["住民税", "支払い"],
+      "category": "personal"
+    }
+  },
+  {
+    "input": "会議の議事録まとめる",
+    "expected": {
+      "title": "会議の議事録をまとめる",
+      "dueDate": null,
+      "tags": ["会議", "議事録"],
+      "category": "work"
+    }
+  },
+  {
+    "input": "いつか旅行の計画を立てたい",
+    "expected": {
+      "title": "旅行の計画を立てる",
+      "dueDate": null,
+      "tags": ["旅行", "計画"],
+      "category": "personal"
+    }
+  },
+  {
+    "input": "明後日あたりに資料やる",
+    "expected": {
+      "title": "資料をやる",
+      "dueDate": null,
+      "tags": ["資料"],
+      "category": "work"
+    }
+  },
+  {
+    "input": "買い物",
+    "expected": {
+      "title": "買い物をする",
+      "dueDate": null,
+      "tags": ["買い物"],
+      "category": "shopping"
+    }
+  },
+  {
+    "input": "来月のどこかで病院",
+    "expected": {
+      "title": "病院に行く",
+      "dueDate": null,
+      "tags": ["病院", "通院"],
+      "category": "health"
+    }
+  }
+]

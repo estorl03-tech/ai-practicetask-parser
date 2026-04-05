@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自然文ToDo整理ツール</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero-card">
+        <p class="eyebrow">Portfolio MVP</p>
+        <h1>自然文からToDoを整理</h1>
+        <p class="hero-copy">
+          メモのように書いたタスクを、期限・タグ・分類つきのToDoに整理するミニアプリです。
+          OpenAI API が使える場合は AI、使えない場合は rule-based parser と fallback で安定して処理します。
+        </p>
+        <div class="hero-meta">
+          <span>入力上限: 150文字</span>
+          <span>rate limit: 10分 / 5回</span>
+          <span>保存先: ブラウザ内のみ</span>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <form id="task-form" class="input-panel">
+          <label class="input-label" for="task-input">やることを入力</label>
+          <textarea
+            id="task-input"
+            name="task"
+            maxlength="150"
+            rows="5"
+            placeholder="例: 明日までに請求書を送る"
+          ></textarea>
+          <div class="input-footer">
+            <p id="char-counter" class="char-counter">0 / 150</p>
+            <button type="submit" class="submit-button">整理する</button>
+          </div>
+          <p class="input-note">
+            デモ用途のため、短い単一タスク入力を想定しています。個人情報や業務機密は入力しないでください。
+          </p>
+        </form>
+
+        <section class="result-panel" aria-live="polite">
+          <div class="result-header">
+            <h2>整理されたToDo</h2>
+          </div>
+
+          <div id="status-message" class="status-message">
+            入力を送ると、整理されたToDoと使用経路がここに表示されます。
+          </div>
+
+          <div id="result-card" class="result-card is-hidden">
+            <dl class="result-grid">
+              <div class="result-row">
+                <dt>整理後タイトル</dt>
+                <dd id="result-title">-</dd>
+              </div>
+              <div class="result-row">
+                <dt>期限</dt>
+                <dd id="result-due-date">-</dd>
+              </div>
+              <div class="result-row">
+                <dt>分類</dt>
+                <dd id="result-category">-</dd>
+              </div>
+              <div class="result-row">
+                <dt>タグ</dt>
+                <dd id="result-tags">-</dd>
+              </div>
+              <div class="result-row">
+                <dt>解析方法</dt>
+                <dd id="result-path">-</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="json-panel standalone-json-panel">
+          <details>
+            <summary>JSON詳細</summary>
+            <pre id="raw-response">まだレスポンスはありません。</pre>
+          </details>
+        </section>
+
+        <section class="history-panel">
+          <div class="history-header">
+            <h2>保存したToDo</h2>
+            <button id="clear-history" type="button" class="secondary-button">履歴削除</button>
+          </div>
+          <p class="history-note">
+            保存はブラウザ内のみです。サーバーには保存しません。
+          </p>
+          <div id="history-empty" class="history-empty">
+            まだ保存されたToDoはありません。
+          </div>
+          <ul id="history-list" class="history-list"></ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

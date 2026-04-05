@@ -1,0 +1,25 @@
+# Fallback Policy
+
+モデル出力が壊れている、または必要項目が足りない場合は、完全失敗にせず最低限の結果を返す。
+
+## Fallback rules
+- title: 入力文を短く整えて使う
+- dueDate: null
+- tags: 1個だけ最低限のタグを入れる
+- category: 判定できなければ other
+- fallback examples は fallback-examples.json を参照する
+
+## Example fallback
+入力:
+明後日あたりに資料やる
+
+返却:
+
+```json
+{
+  "title": "資料をやる",
+  "dueDate": null,
+  "tags": ["資料"],
+  "category": "work"
+}
+```

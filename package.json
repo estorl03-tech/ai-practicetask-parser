@@ -1,0 +1,22 @@
+{
+  "name": "ai-practicetask-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "set PARSER_BASE_DATE=2026-04-03&& node parser.test.js",
+    "test:fallback": "node fallback.test.js",
+    "eval": "set PARSER_BASE_DATE=2026-04-03&& node eval.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2",
+    "openai": "^6.33.0"
+  }
+}

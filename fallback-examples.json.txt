@@ -1,0 +1,29 @@
+[
+  {
+    "input": "買い物",
+    "fallback": {
+      "title": "買い物をする",
+      "dueDate": null,
+      "tags": ["買い物"],
+      "category": "shopping"
+    }
+  },
+  {
+    "input": "そのうち役所の手続き",
+    "fallback": {
+      "title": "役所の手続きをする",
+      "dueDate": null,
+      "tags": ["手続き"],
+      "category": "personal"
+    }
+  },
+  {
+    "input": "夕方スーパー",
+    "fallback": {
+      "title": "スーパーに行く",
+      "dueDate": null,
+      "tags": ["買い物"],
+      "category": "shopping"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+# Day 2 Findings
+
+## Improved
+- title を動詞つきの自然な表現に寄せられた
+- 曖昧な日付表現を dueDate: null にできた
+- 名詞だけの入力でも最低限のタスク表現に補完できた
+
+## Remaining issues
+- tags の具体/抽象の粒度はまだ揺れる
+- personal と other の境界は今後ルール化の余地がある
+
+## Current decision
+- 行政手続きや支払いは personal に寄せる
+- 修理や雑務も当面は personal に寄せる
+- 日付を一意に決められない表現は null にする

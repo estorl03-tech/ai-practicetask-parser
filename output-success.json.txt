@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "result": {
+    "title": "請求書を送る",
+    "dueDate": "2026-04-03",
+    "tags": ["請求書", "送付"],
+    "category": "work"
+  },
+  "error": null
+}
