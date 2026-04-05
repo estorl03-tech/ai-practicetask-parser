@@ -26,6 +26,10 @@ README 用スクリーンショット:
 
 ![自然文ToDo整理ツールのUI](./public/screenshots/todo-parser-ui.png)
 
+整理結果まで含めた画面:
+
+![自然文ToDo整理ツールの解析結果UI](./public/screenshots/todo-parser-ui-result.png)
+
 ## How To Use
 
 1. 口語のままタスクを入力します  
