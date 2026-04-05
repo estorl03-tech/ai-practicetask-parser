@@ -2,7 +2,6 @@
   "name": "ai-practicetask-parser",
   "version": "1.0.0",
   "description": "A portfolio project that turns natural Japanese task notes into structured ToDo data with OpenAI, rule-based fallback, and a small web UI.",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
